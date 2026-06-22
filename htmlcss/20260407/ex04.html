@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*{ box-sizing: border-box; /*패딩 없이 크기 설정}*/
+        .main {
+            padding: 20px; /*안쪽 여백 */
+            height: 140px; /*높이 */
+            margin: 0 auto; /*중간으로 */
+            width: 420px; /* 넓이 설정 */
+            background-color: rgb(220,220,220);
+        }
+        input{
+            width: 100%;
+            padding: 12px 14px;
+            outline: none;
+            border: 1px solid black;
+            /* border: none; */
+            border-radius: 10px;
+        }
+        input:focus{
+            border: 1px solid rgb(20,20,220,0.7);
+        }
+    </style>
+</head>
+<body>
+    <div class = 'main'>
+        <h1>생년월일</h1>
+        <input type="text" id="brth">
+        <div id="print"></div>
+        <button id="check">나이계산</button>
+
+    </div>
+    
+    
+</body>
+</html>

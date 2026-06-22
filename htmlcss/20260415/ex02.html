@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "h1">addEventListener</h1>
+    <button id="btn">클릭</button>
+    <input type="button" value="버튼" id="btninput">
+    <script>
+        let count=0;
+        function h1fn(){
+            console.log(this);
+            console.log(this.textContent);
+            count++;
+            if(count == 2)
+                h1.removeEventListener('click', h1fn);
+        }
+        btninput.addEventListener('click',function(){
+            console.log(this);
+            console.log(this.value);
+        });
+        h1.addEventListener('click',h1fn);
+
+        btn.addEventListener('click',function(){
+            console.log('btn');
+            console.log(this); //누른거 출력
+        });
+    </script>
+</body>
+</html>

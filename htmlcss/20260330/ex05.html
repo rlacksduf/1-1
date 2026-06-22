@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input # num 엔터
+     button#check  엔터  -->
+     <h1>팩토리얼 4! 5!</h1>
+    <input type="text" id="num"> 
+    <button id="check">팩토리얼확인</button>
+    <div id="print"></div>
+    
+</body>
+
+<script>
+    document.getElementById('check').onclick = () => {
+        const value = document.getElementById('num').value;
+        document.getElementById('print').textContent = '5*4*3*2*1';
+        console.log(value);
+    }
+</script>
+
+
+</html>

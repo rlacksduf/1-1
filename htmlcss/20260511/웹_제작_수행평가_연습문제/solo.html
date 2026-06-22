@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(245,245,245);
+            font-family: "Noto Sans KR", sans-serif;
+        }
+        h1{
+            color: rgb(50, 80, 160);
+        }
+        .wrap{
+            width: 600px;
+            margin:30px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .menu {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: rgb(255,241,210);
+            border-radius: 10px;
+        }
+        input {
+            width: 400px;
+            height: 34px;
+        }
+        button {
+            height: 38px;
+            background-color: 50,80,100;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: rgb(255,120,120);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h1>우리반 간식 소개 추첨</h1>
+        <p>친구들과 먹고 싶은 간식을 소개하고 추첨하는 웹 페이지입니다.</p>
+        <img src="snackbar-hero.png" alt="간식사진">
+
+        <div class="menu_box">
+            <h2>인기간식</h2>
+            <ul class="menu_list">
+
+            </ul>
+        </div>
+        <div class="menu_box">
+            <h2>간식 추가하기</h2>
+            <input type="text" class="input_snack" placeholder="추가할 간식 이름">
+            <button class="btn_add">추가</button>
+        </div>
+        <div class="event_box">
+            <h2>오늘의간식</h2>
+            <p class="event_result">버튼을 누르면 간식이 추첨됩니다.</p>
+            <button class="btn_event">간식 추첨</button>
+        </div>
+    </div>
+    <script>
+        let snacks = ['치즈토스트','딸기에이드','초코 쿠키']
+    </script>
+</body>
+</html>

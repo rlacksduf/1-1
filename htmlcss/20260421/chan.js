@@ -1,0 +1,1 @@
+console.log(Math.trunc(7 / 2));

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>마우스 이벤트</h1>
+        <button>버튼</button>
+        <button>버튼</button>
+        <script>
+            function mClick(){
+                console.log('mClick');
+
+            }
+            document.getElementsByTagName('button')[0].onclick = mClick;
+            document.getElementsByTagName('button')[1].onclick = mClick;
+        </script>
+        <div onclick=""msg();><h2>div</h2></div>
+        <script>
+            function msg () {
+                console.log('msg');
+            }
+        </script>
+
+            <p id="mp" onclick="alert('누름');">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus quasi aliquam quis earum laboriosam officia. Rem necessitatibus ut consequuntur voluptate quae fugiat asperiores accusamus, at magni nostrum reiciendis error? Nemo.</p>
+            <script>
+                mp.onmouseout = function(){
+                    console.log('마우스 나갔음');
+                }
+                mp.onmouseover = function(){
+                    console.log('마우스 들어옴');
+                }
+            </script>
+    </div>
+</body>
+</html>
